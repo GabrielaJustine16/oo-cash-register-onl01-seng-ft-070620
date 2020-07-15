@@ -16,4 +16,18 @@ class CashRegister
     self.total = cost * number
 
   def apply_discount 
-    
+    end 
+  
+  def items 
+  # (self).items!?
+  # returns an array containing all items that have been added
+  end
+  
+  def void_last_transaction
+  # subtracts the last transaction from the total 
+  end 
+  
+end 
+
+tester = CashRegister.new 
+tester.add_item(4, "carrots", 4)
